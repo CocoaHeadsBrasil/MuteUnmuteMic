@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECF208BE1BAF2DE6000D3C2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF208BD1BAF2DE6000D3C2C /* AppDelegate.m */; };
+		ECF208C11BAF2DE6000D3C2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF208C01BAF2DE6000D3C2C /* main.m */; };
+		ECF208C31BAF2DE6000D3C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF208C21BAF2DE6000D3C2C /* Assets.xcassets */; };
+		ECF208C61BAF2DE6000D3C2C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF208C41BAF2DE6000D3C2C /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ECF208B91BAF2DE6000D3C2C /* MuteUnmuteMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuteUnmuteMic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF208BC1BAF2DE6000D3C2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECF208BD1BAF2DE6000D3C2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECF208C01BAF2DE6000D3C2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECF208C21BAF2DE6000D3C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECF208C51BAF2DE6000D3C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		ECF208C71BAF2DE6000D3C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECF208B61BAF2DE6000D3C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECF208B01BAF2DE6000D3C2C = {
+			isa = PBXGroup;
+			children = (
+				ECF208BB1BAF2DE6000D3C2C /* MuteUnmuteMic */,
+				ECF208BA1BAF2DE6000D3C2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECF208BA1BAF2DE6000D3C2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECF208B91BAF2DE6000D3C2C /* MuteUnmuteMic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECF208BB1BAF2DE6000D3C2C /* MuteUnmuteMic */ = {
+			isa = PBXGroup;
+			children = (
+				ECF208BC1BAF2DE6000D3C2C /* AppDelegate.h */,
+				ECF208BD1BAF2DE6000D3C2C /* AppDelegate.m */,
+				ECF208C21BAF2DE6000D3C2C /* Assets.xcassets */,
+				ECF208C41BAF2DE6000D3C2C /* MainMenu.xib */,
+				ECF208C71BAF2DE6000D3C2C /* Info.plist */,
+				ECF208BF1BAF2DE6000D3C2C /* Supporting Files */,
+			);
+			path = MuteUnmuteMic;
+			sourceTree = "<group>";
+		};
+		ECF208BF1BAF2DE6000D3C2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECF208C01BAF2DE6000D3C2C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECF208B81BAF2DE6000D3C2C /* MuteUnmuteMic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF208CA1BAF2DE6000D3C2C /* Build configuration list for PBXNativeTarget "MuteUnmuteMic" */;
+			buildPhases = (
+				ECF208B51BAF2DE6000D3C2C /* Sources */,
+				ECF208B61BAF2DE6000D3C2C /* Frameworks */,
+				ECF208B71BAF2DE6000D3C2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuteUnmuteMic;
+			productName = MuteUnmuteMic;
+			productReference = ECF208B91BAF2DE6000D3C2C /* MuteUnmuteMic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECF208B11BAF2DE6000D3C2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Gustavo Barbosa";
+				TargetAttributes = {
+					ECF208B81BAF2DE6000D3C2C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = ECF208B41BAF2DE6000D3C2C /* Build configuration list for PBXProject "MuteUnmuteMic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECF208B01BAF2DE6000D3C2C;
+			productRefGroup = ECF208BA1BAF2DE6000D3C2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECF208B81BAF2DE6000D3C2C /* MuteUnmuteMic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECF208B71BAF2DE6000D3C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF208C31BAF2DE6000D3C2C /* Assets.xcassets in Resources */,
+				ECF208C61BAF2DE6000D3C2C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECF208B51BAF2DE6000D3C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF208C11BAF2DE6000D3C2C /* main.m in Sources */,
+				ECF208BE1BAF2DE6000D3C2C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ECF208C41BAF2DE6000D3C2C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECF208C51BAF2DE6000D3C2C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECF208C81BAF2DE6000D3C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ECF208C91BAF2DE6000D3C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ECF208CB1BAF2DE6000D3C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MuteUnmuteMic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.barbosa.MuteUnmuteMic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECF208CC1BAF2DE6000D3C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MuteUnmuteMic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.barbosa.MuteUnmuteMic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECF208B41BAF2DE6000D3C2C /* Build configuration list for PBXProject "MuteUnmuteMic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF208C81BAF2DE6000D3C2C /* Debug */,
+				ECF208C91BAF2DE6000D3C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF208CA1BAF2DE6000D3C2C /* Build configuration list for PBXNativeTarget "MuteUnmuteMic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF208CB1BAF2DE6000D3C2C /* Debug */,
+				ECF208CC1BAF2DE6000D3C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECF208B11BAF2DE6000D3C2C /* Project object */;
+}
