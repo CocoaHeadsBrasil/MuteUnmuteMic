@@ -17,7 +17,7 @@
     
     menuItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     menuItem.highlightMode = YES;
-    menuItem.title = @"Mute";
+    menuItem.image = [NSImage imageNamed:@"mic_on"];
     [menuItem setTarget:self];
     [menuItem setAction:@selector(toggleMute)];
 }
@@ -31,7 +31,8 @@
     
     [script executeAndReturnError:nil];
     
-    menuItem.title = muted ? @"Unmute" : @"Mute";
+    NSString *imageName = muted ? @"mic_off" : @"mic_on";
+    menuItem.image = [NSImage imageNamed:imageName];
 }
 
 @end
