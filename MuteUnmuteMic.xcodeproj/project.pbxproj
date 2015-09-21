@@ -245,7 +245,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MuteUnmuteMic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.barbosa.MuteUnmuteMic;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cocoaheads.MuteUnmuteMic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -257,7 +257,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MuteUnmuteMic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.barbosa.MuteUnmuteMic;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cocoaheads.MuteUnmuteMic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -281,6 +281,7 @@
 				ECF208CC1BAF2DE6000D3C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
