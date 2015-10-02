@@ -19,6 +19,50 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu id="d1i-xa-wlo">
             <items>
+                <menuItem title="Input Volume" id="w4W-DI-DEg">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Input Volume" autoenablesItems="NO" id="iVL-f8-mAL">
+                        <items>
+                            <menuItem title="100" id="NOm-DS-Fei">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="didSetVolumeInput:" target="Voe-Tx-rLC" id="I1n-CB-cYw"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="90" tag="5" id="cSh-2l-eG8">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="didSetVolumeInput:" target="Voe-Tx-rLC" id="b1z-78-Fgk"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="80" tag="5" id="OoN-lP-2Ll">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="didSetVolumeInput:" target="Voe-Tx-rLC" id="itM-AQ-plW"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="70" state="on" id="ZNu-ZY-zwa">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="didSetVolumeInput:" target="Voe-Tx-rLC" id="Ykp-jU-4Cw"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="60" id="XY7-OS-7P1">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="didSetVolumeInput:" target="Voe-Tx-rLC" id="dqL-Vx-3KL"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="50" id="MrJ-HJ-Wld">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="didSetVolumeInput:" target="Voe-Tx-rLC" id="PVQ-c8-lcy"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="e5f-y4-vmV"/>
                 <menuItem title="Quit" id="kX5-as-WCF">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>

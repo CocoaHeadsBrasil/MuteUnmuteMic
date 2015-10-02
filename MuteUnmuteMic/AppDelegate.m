@@ -1,11 +1,12 @@
 #import "AppDelegate.h"
 
-#define MAX_VOLUME 75
+#define MAX_VOLUME 70
 
 @interface AppDelegate ()
 {
     NSStatusItem *menuItem;
     BOOL muted;
+    int inputVolumeToUnmute;
 }
 
 @end
@@ -19,6 +20,7 @@
 
 - (void)initDefaults {
     muted = NO;
+    inputVolumeToUnmute = MAX_VOLUME;
 }
 
 - (void)configureStatusBar {
@@ -47,8 +49,11 @@
 
 - (void)toggleMute {
     muted = !muted;
-    
-    int volume = muted ? 0 : MAX_VOLUME;
+    [self updateInputVolume];
+}
+
+- (void)updateInputVolume {
+    int volume = muted ? 0 : inputVolumeToUnmute;
     NSString *source = [NSString stringWithFormat:@"set volume input volume %d", volume];
     NSAppleScript *script = [[NSAppleScript alloc] initWithSource:source];
     
@@ -56,11 +61,23 @@
     
     NSString *imageName = muted ? @"mic_off" : @"mic_on";
     menuItem.image = [NSImage imageNamed:imageName];
+
 }
 
 - (void)showMenu {
     [menuItem popUpStatusItemMenu:self.menu];
 }
 
+
+- (IBAction)didSetVolumeInput:(NSMenuItem *)sender {
+    
+    for (NSMenuItem *item in sender.menu.itemArray) {
+        item.state = 0;
+    }
+    sender.state = 1;
+    
+    inputVolumeToUnmute = [sender.title intValue];
+    [self updateInputVolume];
+}
 
 @end
