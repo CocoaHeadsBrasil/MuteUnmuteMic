@@ -13,13 +13,36 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    [self initDefaults];
+    [self configureStatusBar];
+}
+
+- (void)initDefaults {
     muted = NO;
+}
+
+- (void)configureStatusBar {
+    NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
     
-    menuItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    menuItem.highlightMode = YES;
-    menuItem.image = [NSImage imageNamed:@"mic_on"];
+    menuItem = [statusBar statusItemWithLength:NSVariableStatusItemLength];
+    [menuItem setToolTip:@"MuteUnmuteMic by CocoaHeads Brazil"];
+    [menuItem setImage:[NSImage imageNamed:@"mic_on"]];
+    [menuItem setHighlightMode:YES];
+
     [menuItem setTarget:self];
-    [menuItem setAction:@selector(toggleMute)];
+    [menuItem setAction:@selector(menuItemClicked:)];
+    [menuItem.button sendActionOn:NSLeftMouseUpMask|NSRightMouseUpMask];
+}
+
+- (void)menuItemClicked:(id)sender {
+    NSEvent *event = [[NSApplication sharedApplication] currentEvent];
+    
+    if ((event.modifierFlags & NSControlKeyMask) || (event.type == NSRightMouseUp)) {
+        [self showMenu];
+    } else {
+        [self toggleMute];
+    }
+
 }
 
 - (void)toggleMute {
@@ -34,5 +57,10 @@
     NSString *imageName = muted ? @"mic_off" : @"mic_on";
     menuItem.image = [NSImage imageNamed:imageName];
 }
+
+- (void)showMenu {
+    [menuItem popUpStatusItemMenu:self.menu];
+}
+
 
 @end
