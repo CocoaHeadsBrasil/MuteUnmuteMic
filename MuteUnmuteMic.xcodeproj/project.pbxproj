@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9A9F66F1BC35EDC004395E8 /* AudioMixer.c in Sources */ = {isa = PBXBuildFile; fileRef = D9A9F66D1BC35EDC004395E8 /* AudioMixer.c */; settings = {ASSET_TAGS = (); }; };
 		ECF208BE1BAF2DE6000D3C2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF208BD1BAF2DE6000D3C2C /* AppDelegate.m */; };
 		ECF208C11BAF2DE6000D3C2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF208C01BAF2DE6000D3C2C /* main.m */; };
 		ECF208C31BAF2DE6000D3C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF208C21BAF2DE6000D3C2C /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D9A9F66D1BC35EDC004395E8 /* AudioMixer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = AudioMixer.c; path = MuteUnmuteMic/AudioMixer.c; sourceTree = "<group>"; };
+		D9A9F66E1BC35EDC004395E8 /* AudioMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioMixer.h; path = MuteUnmuteMic/AudioMixer.h; sourceTree = "<group>"; };
 		ECF208B91BAF2DE6000D3C2C /* MuteUnmuteMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuteUnmuteMic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF208BC1BAF2DE6000D3C2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECF208BD1BAF2DE6000D3C2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +42,8 @@
 			children = (
 				ECF208BB1BAF2DE6000D3C2C /* MuteUnmuteMic */,
 				ECF208BA1BAF2DE6000D3C2C /* Products */,
+				D9A9F66D1BC35EDC004395E8 /* AudioMixer.c */,
+				D9A9F66E1BC35EDC004395E8 /* AudioMixer.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +147,7 @@
 			files = (
 				ECF208C11BAF2DE6000D3C2C /* main.m in Sources */,
 				ECF208BE1BAF2DE6000D3C2C /* AppDelegate.m in Sources */,
+				D9A9F66F1BC35EDC004395E8 /* AudioMixer.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

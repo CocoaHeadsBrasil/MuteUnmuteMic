@@ -1,32 +1,37 @@
 #import "AppDelegate.h"
+#import "AudioMixer.h"
 
-#define MAX_VOLUME 70
+static NSInteger const kDefaultVolume = 70;
 
 @interface AppDelegate ()
-{
-    NSStatusItem *menuItem;
-    BOOL muted;
-    int inputVolumeToUnmute;
-}
+
+@property (nonatomic) NSStatusItem *menuItem;
+@property (nonatomic) BOOL muted;
+@property (nonatomic) NSInteger inputVolumeToUnmute;
 
 @end
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
     [self initDefaults];
     [self configureStatusBar];
+    [self updateInputVolume];
 }
 
-- (void)initDefaults {
-    muted = NO;
-    inputVolumeToUnmute = MAX_VOLUME;
+- (void)initDefaults
+{
+    _muted = IsHardwareMuted();
+    _inputVolumeToUnmute = kDefaultVolume;
 }
 
-- (void)configureStatusBar {
+- (void)configureStatusBar
+{
     NSStatusBar *statusBar = [NSStatusBar systemStatusBar];
     
-    menuItem = [statusBar statusItemWithLength:NSVariableStatusItemLength];
+    NSStatusItem *menuItem =
+    [statusBar statusItemWithLength:NSVariableStatusItemLength];
     [menuItem setToolTip:@"MuteUnmuteMic by CocoaHeads Brazil"];
     [menuItem setImage:[NSImage imageNamed:@"mic_on"]];
     [menuItem setHighlightMode:YES];
@@ -34,9 +39,12 @@
     [menuItem setTarget:self];
     [menuItem setAction:@selector(menuItemClicked:)];
     [menuItem.button sendActionOn:NSLeftMouseUpMask|NSRightMouseUpMask];
+    
+    self.menuItem = menuItem;
 }
 
-- (void)menuItemClicked:(id)sender {
+- (void)menuItemClicked:(id)sender
+{
     NSEvent *event = [[NSApplication sharedApplication] currentEvent];
     
     if ((event.modifierFlags & NSControlKeyMask) || (event.type == NSRightMouseUp)) {
@@ -44,39 +52,59 @@
     } else {
         [self toggleMute];
     }
-
 }
 
-- (void)toggleMute {
-    muted = !muted;
+- (void)toggleMute
+{
+    self.muted = !self.muted;
     [self updateInputVolume];
 }
 
-- (void)updateInputVolume {
-    int volume = muted ? 0 : inputVolumeToUnmute;
-    NSString *source = [NSString stringWithFormat:@"set volume input volume %d", volume];
+- (void)updateInputVolume
+{
+    BOOL muted = self.muted;
+    
+    NSInteger volume;
+    NSString *imageName;
+    if (muted) {
+        volume = 0;
+        imageName = @"mic_off";
+    } else {
+        volume = self.inputVolumeToUnmute;
+        imageName = @"mic_on";
+    }
+    
+    // set volume
+    NSString *source =
+    [NSString stringWithFormat:@"set volume input volume %ld", (long)volume];
     NSAppleScript *script = [[NSAppleScript alloc] initWithSource:source];
+    NSDictionary *errorInfo = nil;
+    [script executeAndReturnError:&errorInfo];
     
-    [script executeAndReturnError:nil];
+    if (errorInfo) {
+        NSLog(@"Error on script %@", errorInfo);
+    }
     
-    NSString *imageName = muted ? @"mic_off" : @"mic_on";
-    menuItem.image = [NSImage imageNamed:imageName];
-
+    // set hardware mute
+    SetHardwareMute(muted);
+    
+    // set image
+    self.menuItem.image = [NSImage imageNamed:imageName];
 }
 
-- (void)showMenu {
-    [menuItem popUpStatusItemMenu:self.menu];
+- (void)showMenu
+{
+    [self.menuItem popUpStatusItemMenu:self.menu];
 }
 
-
-- (IBAction)didSetVolumeInput:(NSMenuItem *)sender {
-    
+- (IBAction)didSetVolumeInput:(NSMenuItem *)sender
+{
     for (NSMenuItem *item in sender.menu.itemArray) {
         item.state = 0;
     }
     sender.state = 1;
     
-    inputVolumeToUnmute = [sender.title intValue];
+    self.inputVolumeToUnmute = [sender.title integerValue];
     [self updateInputVolume];
 }
 
