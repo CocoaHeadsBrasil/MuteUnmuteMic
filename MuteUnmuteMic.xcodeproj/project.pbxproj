@@ -37,13 +37,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9A9F6701BC5830F004395E8 /* AudioMixer */ = {
+			isa = PBXGroup;
+			children = (
+				D9A9F66D1BC35EDC004395E8 /* AudioMixer.c */,
+				D9A9F66E1BC35EDC004395E8 /* AudioMixer.h */,
+			);
+			name = AudioMixer;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		ECF208B01BAF2DE6000D3C2C = {
 			isa = PBXGroup;
 			children = (
 				ECF208BB1BAF2DE6000D3C2C /* MuteUnmuteMic */,
 				ECF208BA1BAF2DE6000D3C2C /* Products */,
-				D9A9F66D1BC35EDC004395E8 /* AudioMixer.c */,
-				D9A9F66E1BC35EDC004395E8 /* AudioMixer.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +72,7 @@
 				ECF208C41BAF2DE6000D3C2C /* MainMenu.xib */,
 				ECF208C71BAF2DE6000D3C2C /* Info.plist */,
 				ECF208BF1BAF2DE6000D3C2C /* Supporting Files */,
+				D9A9F6701BC5830F004395E8 /* AudioMixer */,
 			);
 			path = MuteUnmuteMic;
 			sourceTree = "<group>";
@@ -103,7 +112,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Gustavo Barbosa";
+				ORGANIZATIONNAME = "CocoaHeads Brasil";
 				TargetAttributes = {
 					ECF208B81BAF2DE6000D3C2C = {
 						CreatedOnToolsVersion = 7.0;

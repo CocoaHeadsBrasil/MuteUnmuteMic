@@ -1,3 +1,10 @@
+//
+//  AppDelegate.m
+//  MuteUnmuteMic
+//
+//  Copyright © 2015 CocoaHeads Brasil. All rights reserved.
+//
+
 #import "AppDelegate.h"
 #import "AudioMixer.h"
 
