@@ -3,7 +3,7 @@
 //  MuteUnmuteMic
 //
 //  Created by Diogo Tridapalli on 10/5/15.
-//  Copyright © 2015 Gustavo Barbosa. All rights reserved.
+//  Copyright © 2015 CocoaHeads Brasil. All rights reserved.
 //
 
 #ifndef AudioMixer_h
