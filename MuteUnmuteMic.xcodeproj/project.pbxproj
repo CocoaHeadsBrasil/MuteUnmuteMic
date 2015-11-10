@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D9A9F66F1BC35EDC004395E8 /* AudioMixer.c in Sources */ = {isa = PBXBuildFile; fileRef = D9A9F66D1BC35EDC004395E8 /* AudioMixer.c */; settings = {ASSET_TAGS = (); }; };
+		D9A9F66F1BC35EDC004395E8 /* AudioMixer.c in Sources */ = {isa = PBXBuildFile; fileRef = D9A9F66D1BC35EDC004395E8 /* AudioMixer.c */; };
 		ECF208BE1BAF2DE6000D3C2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF208BD1BAF2DE6000D3C2C /* AppDelegate.m */; };
 		ECF208C11BAF2DE6000D3C2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF208C01BAF2DE6000D3C2C /* main.m */; };
 		ECF208C31BAF2DE6000D3C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF208C21BAF2DE6000D3C2C /* Assets.xcassets */; };

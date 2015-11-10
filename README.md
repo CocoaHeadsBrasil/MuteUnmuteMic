@@ -9,7 +9,7 @@ MacOS 10.10 Yosemite or higher version.
 
 ## Installation
 
-Download the [latest stable version](https://github.com/CocoaHeadsBrasil/MuteUnmuteMic/releases/download/1.4/MuteUnmuteMic.zip) or clone this repo and build & run.
+Download the [latest stable version](https://github.com/CocoaHeadsBrasil/MuteUnmuteMic/releases/download/1.4.1/MuteUnmuteMic.zip) or clone this repo and build & run.
 
 ## Usage
 
