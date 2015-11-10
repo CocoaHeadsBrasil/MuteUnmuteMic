@@ -39,7 +39,7 @@ static NSInteger const kDefaultVolume = 70;
     
     NSStatusItem *menuItem =
     [statusBar statusItemWithLength:NSVariableStatusItemLength];
-    [menuItem setToolTip:@"MuteUnmuteMic by CocoaHeads Brazil"];
+    [menuItem setToolTip:@"Un[Mute]Mic by CocoaHeads Brazil"];
     [menuItem setImage:[NSImage imageNamed:@"mic_on"]];
     [menuItem setHighlightMode:YES];
 
