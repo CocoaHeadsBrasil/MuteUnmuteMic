@@ -15,8 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D9A9F66D1BC35EDC004395E8 /* AudioMixer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = AudioMixer.c; path = MuteUnmuteMic/AudioMixer.c; sourceTree = "<group>"; };
-		D9A9F66E1BC35EDC004395E8 /* AudioMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioMixer.h; path = MuteUnmuteMic/AudioMixer.h; sourceTree = "<group>"; };
+		D9A9F66D1BC35EDC004395E8 /* AudioMixer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = AudioMixer.c; path = "[Un]MuteMic/AudioMixer.c"; sourceTree = "<group>"; };
+		D9A9F66E1BC35EDC004395E8 /* AudioMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioMixer.h; path = "[Un]MuteMic/AudioMixer.h"; sourceTree = "<group>"; };
 		ECF208B91BAF2DE6000D3C2C /* [Un]MuteMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[Un]MuteMic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF208BC1BAF2DE6000D3C2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECF208BD1BAF2DE6000D3C2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		ECF208B01BAF2DE6000D3C2C = {
 			isa = PBXGroup;
 			children = (
-				ECF208BB1BAF2DE6000D3C2C /* MuteUnmuteMic */,
+				ECF208BB1BAF2DE6000D3C2C /* [Un]MuteMic */,
 				ECF208BA1BAF2DE6000D3C2C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +63,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ECF208BB1BAF2DE6000D3C2C /* MuteUnmuteMic */ = {
+		ECF208BB1BAF2DE6000D3C2C /* [Un]MuteMic */ = {
 			isa = PBXGroup;
 			children = (
 				ECF208BC1BAF2DE6000D3C2C /* AppDelegate.h */,
@@ -74,7 +74,7 @@
 				ECF208BF1BAF2DE6000D3C2C /* Supporting Files */,
 				D9A9F6701BC5830F004395E8 /* AudioMixer */,
 			);
-			path = MuteUnmuteMic;
+			path = "[Un]MuteMic";
 			sourceTree = "<group>";
 		};
 		ECF208BF1BAF2DE6000D3C2C /* Supporting Files */ = {
@@ -258,7 +258,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MuteUnmuteMic/Info.plist;
+				INFOPLIST_FILE = "[Un]MuteMic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.cocoaheads.MuteUnmuteMic;
 				PRODUCT_NAME = "[Un]MuteMic";
@@ -270,7 +270,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MuteUnmuteMic/Info.plist;
+				INFOPLIST_FILE = "[Un]MuteMic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.cocoaheads.MuteUnmuteMic;
 				PRODUCT_NAME = "[Un]MuteMic";
