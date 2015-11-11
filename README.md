@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/CocoaHeadsBrasil/MuteUnmuteMic/master/MuteUnmuteMic/Assets.xcassets/AppIcon.appiconset/128.png" width="100" height="100"/>
-  <h1>MuteUnmuteMic</h1>
+  <h1>[Un]MuteMic</h1>
   <p align="center">OSX app to mute &amp; unmute the input volume of your microphone. <br/>Perfect for podcasters.</p>
 </div>
 ## Requirements
@@ -13,7 +13,7 @@ Download the [latest stable version](https://github.com/CocoaHeadsBrasil/MuteUnm
 
 ## Usage
 
-![MutUnmuteMic usage](https://cloud.githubusercontent.com/assets/235208/10419593/143171fc-704a-11e5-8270-374ca898685b.gif)
+![[Un]MuteMic usage](https://cloud.githubusercontent.com/assets/235208/10419593/143171fc-704a-11e5-8270-374ca898685b.gif)
 
 ## Authors
 

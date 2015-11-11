@@ -15,9 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D9A9F66D1BC35EDC004395E8 /* AudioMixer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = AudioMixer.c; path = MuteUnmuteMic/AudioMixer.c; sourceTree = "<group>"; };
-		D9A9F66E1BC35EDC004395E8 /* AudioMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioMixer.h; path = MuteUnmuteMic/AudioMixer.h; sourceTree = "<group>"; };
-		ECF208B91BAF2DE6000D3C2C /* MuteUnmuteMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuteUnmuteMic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A9F66D1BC35EDC004395E8 /* AudioMixer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = AudioMixer.c; path = "[Un]MuteMic/AudioMixer.c"; sourceTree = "<group>"; };
+		D9A9F66E1BC35EDC004395E8 /* AudioMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioMixer.h; path = "[Un]MuteMic/AudioMixer.h"; sourceTree = "<group>"; };
+		ECF208B91BAF2DE6000D3C2C /* [Un]MuteMic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[Un]MuteMic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF208BC1BAF2DE6000D3C2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECF208BD1BAF2DE6000D3C2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ECF208C01BAF2DE6000D3C2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		ECF208B01BAF2DE6000D3C2C = {
 			isa = PBXGroup;
 			children = (
-				ECF208BB1BAF2DE6000D3C2C /* MuteUnmuteMic */,
+				ECF208BB1BAF2DE6000D3C2C /* [Un]MuteMic */,
 				ECF208BA1BAF2DE6000D3C2C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +58,12 @@
 		ECF208BA1BAF2DE6000D3C2C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ECF208B91BAF2DE6000D3C2C /* MuteUnmuteMic.app */,
+				ECF208B91BAF2DE6000D3C2C /* [Un]MuteMic.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ECF208BB1BAF2DE6000D3C2C /* MuteUnmuteMic */ = {
+		ECF208BB1BAF2DE6000D3C2C /* [Un]MuteMic */ = {
 			isa = PBXGroup;
 			children = (
 				ECF208BC1BAF2DE6000D3C2C /* AppDelegate.h */,
@@ -74,7 +74,7 @@
 				ECF208BF1BAF2DE6000D3C2C /* Supporting Files */,
 				D9A9F6701BC5830F004395E8 /* AudioMixer */,
 			);
-			path = MuteUnmuteMic;
+			path = "[Un]MuteMic";
 			sourceTree = "<group>";
 		};
 		ECF208BF1BAF2DE6000D3C2C /* Supporting Files */ = {
@@ -88,9 +88,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ECF208B81BAF2DE6000D3C2C /* MuteUnmuteMic */ = {
+		ECF208B81BAF2DE6000D3C2C /* [Un]MuteMic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECF208CA1BAF2DE6000D3C2C /* Build configuration list for PBXNativeTarget "MuteUnmuteMic" */;
+			buildConfigurationList = ECF208CA1BAF2DE6000D3C2C /* Build configuration list for PBXNativeTarget "[Un]MuteMic" */;
 			buildPhases = (
 				ECF208B51BAF2DE6000D3C2C /* Sources */,
 				ECF208B61BAF2DE6000D3C2C /* Frameworks */,
@@ -100,9 +100,9 @@
 			);
 			dependencies = (
 			);
-			name = MuteUnmuteMic;
+			name = "[Un]MuteMic";
 			productName = MuteUnmuteMic;
-			productReference = ECF208B91BAF2DE6000D3C2C /* MuteUnmuteMic.app */;
+			productReference = ECF208B91BAF2DE6000D3C2C /* [Un]MuteMic.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +119,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ECF208B41BAF2DE6000D3C2C /* Build configuration list for PBXProject "MuteUnmuteMic" */;
+			buildConfigurationList = ECF208B41BAF2DE6000D3C2C /* Build configuration list for PBXProject "[Un]MuteMic" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -132,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ECF208B81BAF2DE6000D3C2C /* MuteUnmuteMic */,
+				ECF208B81BAF2DE6000D3C2C /* [Un]MuteMic */,
 			);
 		};
 /* End PBXProject section */
@@ -258,10 +258,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MuteUnmuteMic/Info.plist;
+				INFOPLIST_FILE = "[Un]MuteMic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.cocoaheads.MuteUnmuteMic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "[Un]MuteMic";
 			};
 			name = Debug;
 		};
@@ -270,17 +270,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MuteUnmuteMic/Info.plist;
+				INFOPLIST_FILE = "[Un]MuteMic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.cocoaheads.MuteUnmuteMic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "[Un]MuteMic";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ECF208B41BAF2DE6000D3C2C /* Build configuration list for PBXProject "MuteUnmuteMic" */ = {
+		ECF208B41BAF2DE6000D3C2C /* Build configuration list for PBXProject "[Un]MuteMic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECF208C81BAF2DE6000D3C2C /* Debug */,
@@ -289,7 +289,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECF208CA1BAF2DE6000D3C2C /* Build configuration list for PBXNativeTarget "MuteUnmuteMic" */ = {
+		ECF208CA1BAF2DE6000D3C2C /* Build configuration list for PBXNativeTarget "[Un]MuteMic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECF208CB1BAF2DE6000D3C2C /* Debug */,
