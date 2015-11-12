@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/CocoaHeadsBrasil/MuteUnmuteMic/master/MuteUnmuteMic/Assets.xcassets/AppIcon.appiconset/128.png" width="100" height="100"/>
+  <img src="https://raw.githubusercontent.com/CocoaHeadsBrasil/MuteUnmuteMic/master/%5BUn%5DMuteMic/Assets.xcassets/AppIcon.appiconset/128.png" width="100" height="100"/>
   <h1>[Un]MuteMic</h1>
   <p align="center">OSX app to mute &amp; unmute the input volume of your microphone. <br/>Perfect for podcasters.</p>
 </div>
