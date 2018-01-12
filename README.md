@@ -3,6 +3,7 @@
   <h1>[Un]MuteMic</h1>
   <p align="center">macOS app to mute &amp; unmute the input volume of your microphone. <br/>Perfect for podcasters.</p>
 </div>
+
 ## Requirements
 
 macOS 10.10 Yosemite or higher version.
